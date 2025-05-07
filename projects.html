@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>my portfolio</title>
 </head>
 <body>
@@ -211,7 +211,7 @@
                     <div class="topic_heading_1_tools">
                         <!-- svg of tools -->
                          Tools:
-                         <img src="img/letter-c.png" alt="" srcset="" width="30" height="30">
+                         <img src="letter-c.png" alt="" srcset="" width="30" height="30">
                     </div>
                     <div class="small_head">📅 Calendar Program – View Any Year’s Calendar</div>
                     <div class="topic_explain_projects">The Calendar Program is a simple tool built in C that allows users to input a year and see the full calendar for that year. It handles leap years, ensuring February has 29 days when needed, and displays the calendar with the correct alignment of days (Sunday to Saturday) for each month.
@@ -234,21 +234,21 @@
         let b1_abs=document.querySelectorAll('.b1_topic1_abs');
         b1_abs.forEach(i =>{
             i.addEventListener('click',()=>{
-                window.open('doc/saplingo.pdf','_blank');
+                window.open('saplingo.pdf','_blank');
             });
         });
 
         let b2_abs=document.querySelectorAll('.b2_topic1_abs');
         b2_abs.forEach(i =>{
             i.addEventListener('click',()=>{
-                window.open('doc/military.pdf','_blank');
+                window.open('military.pdf','_blank');
             });
         });
 
         let b3_abs=document.querySelectorAll('.b3_topic1_abs');
         b3_abs.forEach(i =>{
             i.addEventListener('click',()=>{
-                window.open('doc/cal.pdf','_blank');
+                window.open('cal.pdf','_blank');
             });
         });
         //
@@ -266,7 +266,7 @@
         let pro1_back_img=document.querySelector('.topic_images_projects');
         let left_arrow_pro1=document.getElementById('left_arrow_project1');
         let right_arrow_pro1=document.getElementById('right_arrow_project1');
-        let img_array=['img/pro1_img1.png','img/pro1_img2.png','img/pro1_img3.png','img/pro1_img4.png'];
+        let img_array=['pro1_img1.png','pro1_img2.png','pro1_img3.png','pro1_img4.png'];
         let flag=0;
         left_arrow_pro1.addEventListener('click',()=>{
             flag--;
@@ -309,6 +309,6 @@
         pro2_back_img.style.backgroundImage=`url(${img2_array[flag1]})`;
     });
     </script>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
