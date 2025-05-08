@@ -856,7 +856,7 @@ header{
     }
 }
 .topic_images_projects{
-    background-image: url('../img/pro1_img1.png');
+    background-image: url('pro1_img1.png');
     border-radius: 10px;
     background-repeat: no-repeat;
     background-size:cover;
@@ -937,7 +937,7 @@ header{
     font-weight: 700;
 }
 .img2_background{
-    background-image: url('../img/pro2.png');
+    background-image: url('pro2.png');
 }
 @media(max-width:1050px)
 {
