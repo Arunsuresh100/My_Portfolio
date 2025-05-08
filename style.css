@@ -79,6 +79,58 @@ header{
 .menu{
     display:none;
 }
+.menu_option_resize{
+    display: none;
+    position: absolute;
+    top:70px;
+    right:40px;
+    min-width:200px;
+    /* background:bler; */
+    backdrop-filter: blur(100px); /* blur effect */
+    -webkit-backdrop-filter: blur(100px); /* for Safari */
+}
+.menu_option_resize ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    padding: 10px;
+    gap:.5rem;
+    align-items: center;
+    border: 1px solid rgb(38, 199, 207);
+    border-radius: 8px;
+    color:white;
+}
+.menu_option_resize ul li{
+    background-color:rgb(38, 199, 207);
+    width:100%;
+    /* display: flex; */
+    text-align: center;
+    /* padding:8px 0px; */
+    border-radius: 8px;
+    border: 1px solid rgb(38, 199, 207);
+    transition: all .5s ease-in-out;
+    &:hover{
+        background-color: transparent;
+        color:white;
+    }
+}
+.menu_option_resize ul li a{
+    /* color:#FFFFFF; */
+    color:black;
+    text-decoration: none;
+    /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding:8px;
+    transform:scale(1);
+    display: block;
+    font-weight: 500;
+    transition:transform .5s ease-in,color .5s ease-in;
+    &:hover{
+        transform: scale(1.1);
+        color:rgb(38, 199, 207);
+    }
+}
 /* responsive */
 @media(max-width:1250px)
 {
@@ -156,6 +208,19 @@ header{
     }
 }
 }
+@media(max-width:460px)
+{
+    .menu_option_resize{
+        /* display: none; */
+        position: absolute;
+        top:70px;
+        right:20px;
+        min-width:200px;
+        /* background:bler; */
+        backdrop-filter: blur(100px); /* blur effect */
+        -webkit-backdrop-filter: blur(100px); /* for Safari */
+    }
+}
 /* nav almost completed */
 /* main */
 .full_section_main{
@@ -208,6 +273,7 @@ header{
         transform:scale(1.05)
     }
 }
+
 .main_social_media{
     /* background-color: red; */
     display:inline-flex;
@@ -790,7 +856,7 @@ header{
     }
 }
 .topic_images_projects{
-    background-image: url('pro1_img1.png');
+    background-image: url('../img/pro1_img1.png');
     border-radius: 10px;
     background-repeat: no-repeat;
     background-size:cover;
@@ -871,7 +937,7 @@ header{
     font-weight: 700;
 }
 .img2_background{
-    background-image: url('pro2.png');
+    background-image: url('../img/pro2.png');
 }
 @media(max-width:1050px)
 {
