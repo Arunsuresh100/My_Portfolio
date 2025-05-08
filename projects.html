@@ -275,22 +275,22 @@
         let pro1_back_img=document.querySelector('.topic_images_projects');
         let left_arrow_pro1=document.getElementById('left_arrow_project1');
         let right_arrow_pro1=document.getElementById('right_arrow_project1');
-        let img_array=['pro1_img1.png','pro1_img2.png','pro1_img3.png','pro1_img4.png'];
-        let flag=0;
+        let img_array=['img/pro1_img1.png','img/pro1_img2.png','img/pro1_img3.png','img/pro1_img4.png'];
+        let flag0=0;
         left_arrow_pro1.addEventListener('click',()=>{
-            flag--;
-            if(flag<0)
+            flag0--;
+            if(flag0<0)
             {
-                flag=img_array.length-1;
+                flag0=img_array.length-1;
             }
             pro1_back_img.style.backgroundImage=`url(${img_array[flag]})`;
         });
 
         right_arrow_pro1.addEventListener('click',()=>{
-            flag++;
-            if(flag>=img_array.length)
+            flag0++;
+            if(flag0>=img_array.length)
             {
-                flag=0;
+                flag0=0;
             }
             pro1_back_img.style.backgroundImage=`url(${img_array[flag]})`;
 
