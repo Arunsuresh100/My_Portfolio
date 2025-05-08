@@ -83,6 +83,7 @@ header{
     display: none;
     position: absolute;
     top:70px;
+    z-index: 9999;
     right:40px;
     min-width:200px;
     /* background:bler; */
