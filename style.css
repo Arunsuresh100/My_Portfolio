@@ -2,12 +2,13 @@
     margin:0;
     padding:0;
 }
+html,body{
+    height:100svh;
 html{
     scroll-behavior: smooth;
 }
 body{
     background: linear-gradient(135deg, #2e2e2e, #1d2227, #242c32);
-
     color:white;
     font-family: Arial, Helvetica, sans-serif;
 }
